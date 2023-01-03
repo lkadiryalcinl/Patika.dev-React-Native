@@ -4,7 +4,6 @@ import {Text, View, Image} from 'react-native';
 import styles from './Card.styles';
 
 const Card = ({StoreItem}) => {
-  console.log(StoreItem);
   return(
     <View style={styles.container}>
         <Image style={styles.image} source={{uri: StoreItem.imgURL}}/>

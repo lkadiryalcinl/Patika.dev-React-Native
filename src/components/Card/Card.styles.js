@@ -25,6 +25,7 @@ export default StyleSheet.create({
   priceText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: 'gray',
   },
   stockInfo: {
     paddingBottom: 5,
