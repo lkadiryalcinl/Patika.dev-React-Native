@@ -1,24 +1,67 @@
+/* eslint-disable prettier/prettier */
 import React from 'react';
-import {SafeAreaView, StyleSheet, FlatList} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  FlatList,
+  ScrollView,
+  Dimensions,
+  Image,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
+
 import Card from './components/Card';
+import Store_Data from './Store_Data.json';
 
 const App = () => {
+  const StoreItem = ({item}) => <Card StoreItem={item} />;
+
   return (
-    <SafeAreaView style = {styles2.container}>
-      <FlatList>  
-      <Card  title = "John Doe" text = "Lorem ipsum dolor."></Card>
-      <Card  title = "John Doe" text = "Lorem ipsum dolor."></Card>
-      <Card  title = "John Doe" text = "Lorem ipsum dolor."></Card>
-      </FlatList>
-    </SafeAreaView>  
+    <SafeAreaView style={styles.container}>
+      <View style = {styles.header}>
+        <Text style = {styles.text}>
+          PATIKASTORE
+        </Text>
+      </View>
+      <View>
+        <TextInput style = {styles.text_input} placeholder = "Ara..." />
+      </View>
+
+      <FlatList
+      horizontal={false}
+      data={Store_Data}
+      renderItem = {StoreItem}
+      numColumns={2}
+      keyExtractor={item => item.id.toString()}
+      />
+    </SafeAreaView>
   );
 };
 
-const styles2 = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'e0e0e0',
+    backgroundColor: 'eceff1',
+    padding:10,
+  },
+  text: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    color: 'purple',
+    marginLeft: 12,
+    marginBottom : 6,
+    paddingTop: 6,
+
+  },
+  text_input: {
+      borderWidth: 2,
+      borderRadius: 12,
+      padding: 8,
+      margin: 8,
+      backgroundColor: '#gray',
   },
 });
-
 export default App;
