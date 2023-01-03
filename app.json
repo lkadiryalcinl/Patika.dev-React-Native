@@ -1,4 +1,5 @@
 {
+  "extends": "./node_modules/@microsoft/rush-stack-compiler-3.",
   "name": "App",
   "displayName": "App"
 }
