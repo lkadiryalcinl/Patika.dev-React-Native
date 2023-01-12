@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "name": "Cafe.exe",
+    "isFavourite": true
+  },
+  {
+    "id": 1,
+    "name": "KafaKafe",
+    "isFavourite": false
+  },
+  {
+    "id": 2,
+    "name": "BugG",
+    "isFavourite": false
+  },
+  {
+    "id": 3,
+    "name": "Rock'n Code",
+    "isFavourite": true
+  },
+  {
+    "id": 4,
+    "name": "(do)Drink",
+    "isFavourite": false
+  },
+  {
+    "id": 5,
+    "name": "Esc",
+    "isFavourite": false
+  },
+  {
+    "id": 6,
+    "name": "Unique",
+    "isFavourite": true
+  }
+]

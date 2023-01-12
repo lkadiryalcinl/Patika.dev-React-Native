@@ -2,36 +2,22 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
 export default StyleSheet.create({
-  container: {
-    backgroundColor: '#eceff1',
-    width: Dimensions.get('window').width / 2.2,
-    borderRadius: 10,
-    margin: 4,
-    padding: 10,
-  },
-  image: {
-    height: Dimensions.get('screen').height/4,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 5,
-    borderRadius: 10,
-  },
-  title: {
-    paddingTop: 5,
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: 'black',
-  },
-  priceText: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: 'gray',
-  },
-  stockInfo: {
-    paddingBottom: 5,
-    color: 'red',
-    textAlign: 'left',
-    fontWeight: 'bold',
-    fontSize: 15,
-  },
+    container: {
+        borderRadius: 10,
+        flexDirection: 'row',
+      },
+      Favourite: {
+        flex: 1,
+        fontWeight: 'bold',
+        color: 'red',
+      },
+      title: {
+        flex: 1,
+        fontWeight: 'bold',
+        color: 'white',
+        marginBottom: 20,
+        marginRight: 10,
+        backgroundColor: '#fc4a1a',
+        textAlign: 'center',
+      },
 });
